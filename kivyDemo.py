@@ -12,7 +12,6 @@ from kivy.uix.image import *
 from kivy.uix.layout import Layout
 from kivy.uix.scrollview import ScrollView
 from kivy.graphics import *
-from glob import glob
 from kivy.uix.textinput import TextInput
 from sightengine.client import *
 from kivy.core.text.text_layout import layout_text
