@@ -38,17 +38,17 @@ Simply run the file **`kivyDemo.py`** using **`python kivyDemo.py`** and then pa
 
 # Screenshot(s)
 
-![](readme_data/Screenshot.png)
+![](date/readme/Screenshot.png)
 
 
 
 # References
 
-- Kivy <img src="readme_data/kivy-logo-black-64.png" width="36">
+- Kivy <img src="data/readme/kivy-logo-black-64.png" width="36">
 
   https://kivy.org/#home
 
-- SightEngine <img src="readme_data/logo-cyan.png" width="116">
+- SightEngine <img src="data/readme/logo-cyan.png" width="116">
 
   https://sightengine.com/
 
