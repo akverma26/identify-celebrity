@@ -38,7 +38,7 @@ Simply run the file **`kivyDemo.py`** using **`python kivyDemo.py`** and then pa
 
 # Screenshot(s)
 
-![](date/readme/Screenshot.png)
+![](data/readme/Screenshot.png)
 
 
 
