@@ -1,0 +1,71 @@
+#:import kivy kivy
+<MyLayout>:
+    canvas.before:
+        Color:
+            rgba: 0.09,0.07,0.17,1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            
+    Label:
+        text:'Select Picture'
+        id: first
+        color: 0.8,0.8,0.8,1
+        font_size: app.calc(.5*self.height)
+        pos_hint: {'x':0,'y':0.93}
+        size_hint: 0.3, 0.06
+        font_name: 'sftextended.ttf'
+        
+    FileChooserIconView:
+        id: filechooser
+        pos_hint: {'x':0,'y':0}
+        size_hint: .6,0.9
+        on_selection: app.selected()
+        
+    Preview:
+        id: preview
+        pos_hint: {'x':0.6,'center_y':.6}
+        size_hint: .4,.5
+        source: 'profile_pic.png'
+        keep_ratio: True
+        allow_stretch: True
+        
+        
+    MyLabel:
+        id: name
+        text: '''Ankit Kumar Verma'''
+        color: 0.8,0.8,0.8,1
+        multiline: True
+        font_size: app.calc(.2*self.height)
+        pos_hint: {'x':.6,'y':0.1} 
+        size_hint: 0.4, 0.2
+        font_name: 'sftextended.ttf'
+        
+    TextInput:
+        id: url
+        pos_hint: {'x':0.6,'y':0.93}
+        size_hint: 0.4, 0.06
+        font_name: 'sftextended.ttf'
+        hint_text: 'Enter URL of an Image'
+        multiline: False
+        font_size: app.calc(.4*self.height)
+        padding_y: app.calc(.3*self.height),0
+        on_text: app.asyncImage()
+        
+    Label:
+        pos_hint: {'center_x':0.45,'y':0.93}
+        color: 0.8,0.8,0.8,1
+        size_hint: 0.3, 0.06
+        font_size: app.calc(.5*self.height)
+        font_name: 'sftextended.ttf'
+        text: 'OR'
+        
+    Button:
+        pos_hint: {'x':0.6,'y':0}
+        font_size: app.calc(.4*self.height)
+        size_hint: 0.4,0.07
+        color: 0.8,0.8,0.8,1
+        text: 'Identify this Celebrity'
+        font_name: 'sftextended.ttf'
+        background_color: 0,0,0,0.5
+        on_release: app.identify()
