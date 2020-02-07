@@ -1,4 +1,4 @@
-## Identify the name of the Celebrity in a given image.
+# Identify the name of the Celebrity in a given image.
 
 - Browse any Image on your local machine or paste the url of an online image and then you will get the name of the celebrity in the given image just after clicking on the button Identify the Celebrity.
 
@@ -8,7 +8,7 @@
 
 
 
-## Requirments
+# Requirments
 
 - **Kivy** (for GUI)
 
@@ -30,19 +30,19 @@
 
   
 
-## How to run
+# How to run
 
 Simply run the file **`kivyDemo.py`** using **`python kivyDemo.py`** and then paste the url of an online image or browse an offline image.
 
 
 
-## Screenshot(s)
+# Screenshot(s)
 
-![](readme_data/Screenshot from 2020-02-08 03-01-14.png)
+![](readme_data/Screenshot.png)
 
 
 
-## References
+# References
 
 - Kivy <img src="readme_data/kivy-logo-black-64.png" width="36">
 
